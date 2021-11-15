@@ -1,9 +1,9 @@
 import os
 import discord
-
 import json
 import requests
 from requests.exceptions import HTTPError
+
 from price import fetch_price_to, fetch_price_cg
 from network import fetch_net_stats
 from web_server import keep_run
@@ -12,7 +12,7 @@ with open('config.json') as f:
     config = json.load(f)
 
 TOKEN = os.environ['TOKEN']
-GUILD = config['guild']
+# GUILD = config['guild']
 
 url_xwp = config['url_xwp']
 url_btc = config['url_btc']
@@ -23,13 +23,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    guild = discord.utils.get(client.guilds, name=GUILD) 
-    print(
-        f'{client.user} is connected to the following guild:\n'
-        f'{guild.name}(id: {guild.id})'
-    )
-    members = '\n - '.join([member.name for member in guild.members])
-    print(f'Guild Members:\n - {members}')
+  print('We have logged in as {0.user}'.format(client))
 
 @client.event
 async def on_message(message):

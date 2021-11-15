@@ -1,10 +1,5 @@
 {
-        "logfile": "log.txt",
         "url_xwp" : "https://tradeogre.com/api/v1/ticker/BTC-XWP",
         "url_btc" : "https://blockchain.com/ticker",
-        "owners": "909098042471350323",
-        "prefix": "!",
-        "description": "XWP-price-Bot",
-        "guild":"scicourse",
         "url_gecko":"https://api.coingecko.com/api/v3/simple/price/"
 }
