@@ -1,5 +1,4 @@
 {
-        "token": "OTA5MDk4MDQyNDcxMzUwMzIz.YY_Vhw.Pe-9qxMrccB6_8p-PI7NEjYoYZ4",
         "logfile": "log.txt",
         "url_xwp" : "https://tradeogre.com/api/v1/ticker/BTC-XWP",
         "url_btc" : "https://blockchain.com/ticker",
